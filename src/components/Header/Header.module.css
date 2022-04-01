@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: rgb(255, 255, 255);
+    height: 90px;
+    width:100%;
+    align-items: center;
+    box-shadow: 0px 3px rgb(0 0 0 / 10%);
+    z-index: 5;
+    color:#225090
+}
+.btnsContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.btn{
+    font-family: 'babes';
+    border: 1px solid #225090;
+    border-radius: 8px;
+    padding: 8px 10px 5px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+.selectedBtn{
+    font-family: 'babes';
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 8px 10px 5px 10px;;
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    background: #225090;
+}
+.title{
+    font-size: 40px;
+    padding-left: 30px;
+    font-family: 'babes';
+}

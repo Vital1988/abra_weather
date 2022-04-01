@@ -1,0 +1,29 @@
+.content{
+    margin: 50px;
+    align-items: center;
+    display: flex;
+    background: #225090;
+    color:white;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #225090;
+}
+.noFavorites{
+    display: flex;
+    width: inherit;
+    height: inherit;
+    justify-content: space-between;
+    font-size: 50px;
+    font-family: 'babes';
+    align-items: center;
+}

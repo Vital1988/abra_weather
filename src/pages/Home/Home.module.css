@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #225090;
+}
+.input{
+    height: 70px;
+    width: 500px;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
