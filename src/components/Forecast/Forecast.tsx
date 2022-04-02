@@ -1,12 +1,11 @@
 import {FC,useState,useEffect} from 'react';
 import { useDispatch , useSelector} from 'react-redux';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import {getCurrentWeather,getFiveDaysForecast} from './../../api/wether'
 import Card from '../Card/Card';
 import heart from '../../assets/icons/heart.png'
 import blackHeart from '../../assets/icons/heart_black.png'
-import {currentW,forcast} from './../../fake'
 import { Options } from '../../utils/modules'
 import { getDay , temperatureFormat} from '../../utils/helpers';
 import { addToFavorites , removeFromFavorites } from '../../redux/actions/weather';
@@ -21,8 +20,8 @@ type ForecastProps = {
 
 const Forecast:FC<ForecastProps> = ({selectedCity}) => {
 
-    const [curWeather,setCurWeather] = useState<any>(currentW[0]);
-    const [curForecast,setCurForecast] = useState<any>(forcast)
+    const [curWeather,setCurWeather] = useState<any>();
+    const [curForecast,setCurForecast] = useState<any>()
     const favoritesList:Array<any> = useSelector((state:any)=>state.weather.favorites);
     const isFavorites = favoritesList.some((fav) => fav.id === selectedCity.value)
     const btnText = isFavorites ? 'Remove From Favorites' : 'Add To Favorites'

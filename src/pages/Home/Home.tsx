@@ -19,10 +19,10 @@ const Home:FC = () => {
     const [optionList,setOptionList] = useState<Array<Options>>([])
     const [selectedCity,setSelectedCity] = useState<Options>({label:'Tel-Aviv',value:'213225'})
     const isDark:boolean = useSelector((state:any)=>state.weather.darkTheme);
-    const debouncedInput = useDebounce(input,500);
+    const debouncedInput = useDebounce(input,400);
     
     const handleInput = async (input:string) => {
-      if(input.length > 3){
+      if(input.length > 1){
         const res  = await autoCompleteSearch(debouncedInput)
         return locationsList(res);
       }
