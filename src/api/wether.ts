@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = 'http://dataservice.accuweather.com'
+const baseUrl = 'https://dataservice.accuweather.com'
 const apikey = 'L4yZ93RCt9J4yGZgsgZGXHn1ktyJuqfC';//if it was a real app i will set this key in .env
 
 const get = async (url:string) => {
